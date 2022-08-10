@@ -41,3 +41,19 @@ body {
 		font-size: 2.2rem;
 	}
 }
+
+.package h2 {
+	color: #ea1c2c;
+	font-weight: 100;
+}
+
+.package p {
+	font-size: 1.2rem;
+	font-weight: 100;
+	color: #383838;
+	line-height: 1.8;
+}
+
+.content {
+	margin-bottom: 100px;
+}
