@@ -31,7 +31,7 @@
 	<body>
 		<nav
 			id="mainNavbar"
-			class="navbar navbar-dark bg-dark navbar-expand-md py-0 fixed-top"
+			class="navbar navbar-dark navbar-expand-md py-0 fixed-top"
 		>
 			<a href="#" class="navbar-brand">CANDY</a>
 			<button
@@ -190,5 +190,13 @@
 			integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
 			crossorigin="anonymous"
 		></script>
+		<script>
+			$(function () {
+				$(document).scroll(function () {
+					const $nav = $('#mainNavbar');
+					$nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+				});
+			});
+		</script>
 	</body>
 </html>
